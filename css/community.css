@@ -1,24 +1,96 @@
-.community-container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background: rgb(255, 255, 255);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;700&family=DM+Sans:wght@300;400;500&display=swap');
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
 }
 
-.community-container h1 {
-    text-align: center;
-    margin-bottom: 20px;
+.community-page {
+  max-width: 820px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
-.community-container p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
-    margin-bottom: 20px;
+.community-header h1 {
+  font-family: 'Syne', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin-bottom: 6px;
+  color: #1a1a1a;
 }
 
-.community-container a {
-    color: #007BFF;
-    text-decoration: none;
+.community-header p {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.community-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.community-card {
+  background: #fff;
+  border: 0.5px solid rgba(0,0,0,0.12);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: border-color 0.2s;
+}
+
+.community-card:hover { border-color: rgba(0,0,0,0.25); }
+
+.platform-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  font-size: 22px;
+}
+
+.platform-icon.discord   { background: #EEEDFE; color: #534AB7; }
+.platform-icon.facebook  { background: #E6F1FB; color: #185FA5; }
+.platform-icon.instagram { background: #FAECE7; color: #993C1D; }
+.platform-icon.twitter   { background: #E1F5EE; color: #0F6E56; }
+
+.community-card h3 {
+  font-family: 'Syne', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #1a1a1a;
+}
+
+.community-card p {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.join-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #1a1a1a;
+  text-decoration: none;
+  border: 0.5px solid rgba(0,0,0,0.2);
+  border-radius: 8px;
+  padding: 7px 14px;
+  transition: background 0.2s;
+}
+
+.join-link:hover { background: #f0f0f0; }
+
+@media (max-width: 600px) {
+  .community-grid { grid-template-columns: 1fr; }
 }
