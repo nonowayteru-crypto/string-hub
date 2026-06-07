@@ -1,17 +1,213 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=3, initial-scale=1.0">
-    <title>Học tập - stringhub</title>
-  <link rel="icon" type="image/x-icon" href="../logo/favicon.ico">
-  <link rel="icon" type="image/png" sizes="32x32" href="../logo/favicon-32x32.png">
-  <link rel="apple-touch-icon" href="../logo/apple-touch-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Học Piano - StringHub</title>
+    <link rel="stylesheet" href="../css/bai-hoc.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="icon" type="image/x-icon" href="../logo/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../logo/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="../logo/apple-touch-icon.png">
 </head>
 <body>
-    <main>
-        <h1>Bài cơ bản</h1>
-        <p></p>
-    </main>
+<header>
+    <div class="navbar-container">
+      <a href="./contact.html">LIÊN HỆ</a>
+      <a href="./community.html">CỘNG ĐỒNG</a>
+      <a href="./donation.html">QUYÊN GÓP</a>
+      <a href="./report.html">BÁO CÁO</a>
+      <a href="./suggest.html">Ý TƯỞNG</a>
+      <a href="./feedback.html">PHẢN HỒI</a>
+      <div class="cart-menu">
+
+        <button id="cartBtn">
+          🛒
+          <span id="cartCount">0</span>
+        </button>
+
+        <div class="cart-dropdown hidden" id="cartDropdown">
+
+          <div id="cartItems">
+
+            <!-- render bằng JS -->
+
+          </div>
+
+          <div class="cart-footer">
+
+            <h3 id="cartTotal">
+              Tổng: 0đ
+            </h3>
+
+            <button id="confirmOrderBtn">Thanh Toán</button>
+
+          </div>
+
+        </div>
+
+      </div>
+      <div class="order-menu">
+
+        <button id="orderBtn">
+          📃
+          <span id="orderCount">0</span>
+        </button>
+
+        <div class="order-dropdown hidden" id="orderDropdown">
+
+          <div id="orderItems">
+            <!-- render bằng JS -->
+          </div>
+
+          <div class="order-footer">
+
+            <h3 id="orderTotal">
+              0 đơn hàng
+            </h3>
+
+            <!-- <a href="/html/order.html">
+              Xem hóa đơn
+            </a> -->
+
+          </div>
+
+        </div>
+
+      </div>
+      <div class="search-box">
+
+        <input type="search" id="searchInput" placeholder="Tìm kiếm nhạc cụ..." />
+
+        <div class="search-dropdown hidden" id="searchDropdown">
+        </div>
+
+      </div>
+      <div class="account-menu">
+
+        <button id="accountBtn">
+          Tài khoản
+        </button>
+
+        <div class="dropdown hidden" id="dropdownMenu">
+
+          <a href="/html/CRUD.html" id="adminLink" class="hidden">
+            Admin Panel
+          </a>
+
+          <button id="btnLogout">
+            Đăng xuất
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="header-container">
+      <a href="/index.html">STRINGHUB</a>
+    </div>
+  </header>
+<main>
+    <p style="font-size: 30px; text-align: center;font-style: bold;">BÀI HỌC PIANO CƠ BẢN</p>
+
+    <div class="lesson-container">
+
+        <a href="https://www.youtube.com/watch?v=_egIZngaByY" target="_blank" class="lesson-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqHUIjqYE_EMhbdlWJ_nV-cFA3nuSjos48Bg&s" alt="">
+            <div class="lesson-info">
+                <h3>Bài 1 - Làm quen với Piano</h3>
+                <p>Dành cho người mới bắt đầu học đàn.</p>
+            </div>
+        </a>
+
+        <a href="https://www.youtube.com/watch?v=TsOt4Z76WkI" target="_blank" class="lesson-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuAkjOLAOmBuvVaC0o8_7zSbgqaL-mxunJxUeBFgoktw&s" alt="">
+            <div class="lesson-info">
+                <h3>Bài 2 - Nhận biết nốt nhạc</h3>
+                <p>Học vị trí các nốt trên bàn phím.</p>
+            </div>
+        </a>
+
+        <a href="https://nhaccuminhphung.com/am-giai-la-gi/" target="_blank" class="lesson-card">
+            <img src="https://nhaccuminhphung.com/wp-content/uploads/2023/02/am-giai-2.png" alt="">
+            <div class="lesson-info">
+                <h3>Bài 3 - Chơi giai điệu đầu tiên</h3>
+                <p>Thực hành với bài nhạc đơn giản.</p>
+            </div>
+        </a>
+        
+    </div>
+    <p style="font-size: 30px; text-align: center;font-style: bold;">SHEET NHẠC</p>
+    <div id="sheet-nhac" class="lesson-container">
+        <a href="https://musescore.com/user/13976561/scores/5586100" target="_blank" class="lesson-card">
+            <img src="https://cdn.ustatik.com/musescore/scoredata/g/56d31428295a398e2207d6ebc406894d378b34fb/score_0.png@500x660?no-cache=1715693905&bgclr=ffffff" alt="">
+            <div class="lesson-info">
+                <h3>Nơi này có anh</h3>
+                <p>Thực hành với bài nhạc đơn giản.</p>
+            </div> 
+        </a>
+        <a href="https://musescore.com/user/28131628/scores/10509628" target="_blank" class="lesson-card">
+            <img src="https://cdn.ustatik.com/musescore/scoredata/g/96c0c3fab0f13cded124c00f4bee934beb790bcc/score_0.png@500x660?no-cache=1715706273&bgclr=ffffff" alt="">
+            <div class="lesson-info">
+                <h3>Vết mưa</h3>
+                <p>Thực hành với bài nhạc đơn giản.</p>
+            </div> 
+        </a>
+        <a href="https://musescore.com/user/16619201/scores/5319906" target="_blank" class="lesson-card">
+            <img src="https://cdn.ustatik.com/musescore/scoredata/g/e5b4946aa558332af11d78f0e99855feea021d29/score_0.png@500x660?no-cache=1715692795&bgclr=ffffff" alt="">
+            <div class="lesson-info">
+                <h3>Phía sau một co gái</h3>
+                <p>Thực hành với bài nhạc đơn giản.</p>
+            </div> 
+        </a>
+    </div>
+</main>
+<footer>
+    <div class="footer-wrapper">
+      <div class="footer-container">
+        <div class="footer-top">
+          <h2>STRINGHUB</h2>
+          <p>Nơi phân phối nhạc cụ chất lượng cao</p>
+        </div>
+
+        <div class="footer-content">
+          <div>
+            <a href="/html/about-us.html">
+              <h4>Về chúng tôi</h4>
+            </a>
+            <p>
+              Chúng tôi là một công ty chuyên bán nhạc cụ với chất lượng cao
+              và dịch vụ tốt nhất.
+            </p>
+          </div>
+
+          <div>
+            <a href="/html/contact.html">
+              <h4>Liên hệ</h4>
+            </a>
+            <p>0705567593</p>
+          </div>
+
+          <div>
+            <h4>Địa chỉ</h4>
+            <p>Hẻm 355 ,Phú Hòa Đông ,Củ Chi ,Tp HCM</p>
+          </div>
+
+          <div>
+            <h4>MXH</h4>
+            <a href="https://www.facebook.com/luu.huy.lam.2024/" target="_blank">
+              <h4>Facebook</h4>
+            </a><br />
+            <a href="https://www.tiktok.com/@luuhuylamhcm" target="_blank">
+              <h4>TikTok</h4>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
